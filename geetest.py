@@ -8,7 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 EMAIL = '1476204794@qq.com'
-PASSWORD = '13672519424yy'
+PASSWORD = ''
 BORDER = 6
 INT_LEFT = 60
 
@@ -17,7 +17,7 @@ class CrackGeetest():
     # 初始化
     def __init__(self):
         self.url = 'https://account.geetest.com/login'
-        self.browser = webdriver.Chrome('/home/feng/chromedriver_linux64/chromedriver')
+        self.browser = webdriver.Chrome()
         self.wait = WebDriverWait(self.browser, 20)
         self.email = EMAIL
         self.password = PASSWORD
